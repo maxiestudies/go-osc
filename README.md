@@ -57,7 +57,7 @@ import "github.com/hypebeast/go-osc/osc"
 func main() {
     addr := "127.0.0.1:8765"
     d := osc.NewStandardDispatcher()
-    d.AddMsgHandler("/message/address", func(msg *osc.Message) {
+    d.AddMsgHandler("/osc/address", func(msg *osc.Message) {
         osc.PrintMessage(msg)
     })
 
